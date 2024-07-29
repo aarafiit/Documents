@@ -1,0 +1,7104 @@
+{
+	"info": {
+		"_postman_id": "995ba8b7-1616-48ee-89cd-ef6c47d88510",
+		"name": "smart-MF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35956797",
+		"_collection_link": "https://smart-mf.postman.co/workspace/smart-MF-Workspace~cf25cc14-e807-4b34-8fb4-c5b114e94fa6/collection/33934771-995ba8b7-1616-48ee-89cd-ef6c47d88510?action=share&source=collection_link&creator=35956797"
+	},
+	"item": [
+		{
+			"name": "BM",
+			"item": [
+				{
+					"name": "BM-003-buffer-collections",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{branchId}}/buffer-collections?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{branchId}}",
+								"buffer-collections"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-015-eligible-members",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/emergency-loans/eligible-members?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"emergency-loans",
+								"eligible-members"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-016-targets",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/employees/targets?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"employees",
+								"targets"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-021-loan-accounts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/loan-accounts?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"loan-accounts"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-022-mapped-term-savings",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/loan-accounts/mapped-term-savings?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"loan-accounts",
+								"mapped-term-savings"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-023-loan-accounts-transactions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/loan-accounts/transactions?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"loan-accounts",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-024-loan-collections",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/loan-collections?projectIds={{bmProjectIds}}&dateFrom=2024-09-01&dateTo=2024-09-15&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"loan-collections"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-09-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-09-15"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-005-buffer-loan-proposals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/buffer-loan-proposals?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"buffer-loan-proposals"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "poId",
+									"value": "45",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-026-loan-provisions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/loan-provisions?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"loan-provisions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-029-members",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/members?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"members"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-031-blacklists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/members/blacklists?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"members",
+								"blacklists"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-032-insurers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/members/insurers?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"members",
+								"insurers"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-034-passbooks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/members/passbooks?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"members",
+								"passbooks"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-036-personal-infos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/members/personal-infos?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"members",
+								"personal-infos"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-048-savings-accounts-transactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/savings-accounts/transactions?projectIds={{bmProjectIds}}&dateFrom=2021-01-01&dateTo=2021-01-15&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"savings-accounts",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2021-01-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2021-01-15"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-053-tagged-vo-locations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/tagged-vo-locations?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"tagged-vo-locations"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-056-term-savings-accounts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/term-savings/accounts?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"term-savings",
+								"accounts"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-057-term-savings-transactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/term-savings/transactions?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"term-savings",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-059-village-organizations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/village-organizations?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"village-organizations"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-060-next-collection-dates",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/village-organizations/next-collection-dates?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"village-organizations",
+								"next-collection-dates"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-025-loan-proposals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/loan-proposals?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"loan-proposals"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-027-member-follow-up",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/member-follow-up?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"member-follow-up"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-044-program-organizers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/programme-organizers?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"programme-organizers"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-049-withdraw-proposal",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/savings/withdrawal-proposals?page={{pageNumber}}&size={{pageSize}}&projectIds={{bmProjectIds}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"savings",
+								"withdrawal-proposals"
+							],
+							"query": [
+								{
+									"key": "statusIds",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								},
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-001-assistant-branch-manager",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/assistant-branch-managers?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"assistant-branch-managers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-010-buffer-members",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/buffer-members?projectIds=1&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"buffer-members"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-030-memebers-attention",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/members/attentions?projectIds=1&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"members",
+								"attentions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "projectIds",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-033-nominees",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/342/members/nominees?projectIds=1&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"342",
+								"members",
+								"nominees"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-037-qr-codes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/members/qr-codes?projectIds=1&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"members",
+								"qr-codes"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-038-qr-mappers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/342/members/qr-mappers?projectIds=1&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"342",
+								"members",
+								"qr-mappers"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-040-po-abm-mapping",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/342/po-abm-mappings?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"342",
+								"po-abm-mappings"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-043-last-sync-times",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/program-organisers/last-sync-times?projectIds=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"program-organisers",
+								"last-sync-times"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-047-saving-accounts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/savings-accounts?projectIds=1&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"savings-accounts"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-058-village-organisations-visits",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/branches/{{bmBranchId}}/village-organisations/visits?projectIds=1&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"branches",
+								"{{bmBranchId}}",
+								"village-organisations",
+								"visits"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-061-mobile-app-version",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/mobile-app-version",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"mobile-app-version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-062-mobile-app-version-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/mobile-app-version/100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"mobile-app-version",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-063-mobile-app-version-latest",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/mobile-app-version/latest",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"mobile-app-version",
+								"latest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BM-064-static-survey-responses",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{bmToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/bm/v1/static-survey-responses?branchId={{bmBranchId}}&page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"bm",
+								"v1",
+								"static-survey-responses"
+							],
+							"query": [
+								{
+									"key": "branchId",
+									"value": "{{bmBranchId}}"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Common,Config,Report",
+			"item": [
+				{
+					"name": "C-002",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/branches/10/business-dates/last-business-dates/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"branches",
+								"10",
+								"business-dates",
+								"last-business-dates",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-003",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzd2FnZ2VyLWFkbWluIiwiVE9LRU5fVkFMSURJVFlfVkVSU0lPTiI6MSwiS0VZX1RPS0VOX0NSRUFUSU9OX1RJTUVTVEFNUCI6MTY5NDQzMTczNDY1NCwiQVVUSE9SSVRJRVMiOiJST0xFX0FETUlOIiwiSURfS0VZIjowLCJCUkFOQ0hfSUQiOjc1OSwiVVNFUl9OQU1FIjoic3dhZ2dlci1hZG1pbiIsImV4cCI6MTAwMDE2OTQ0MzE3MzN9.V2iQ9Ppcxxnb0VYSETrR2TCaCiuu_wzs8IgbvB48dJtt7Ko29pG7O-01eM5ZobFxOIJ1au0Li16vfV00lPtHOA",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/branches/10/emergency-loans/eligible-members?projectIds=32&page=100&size=25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"branches",
+								"10",
+								"emergency-loans",
+								"eligible-members"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "32"
+								},
+								{
+									"key": "page",
+									"value": "100"
+								},
+								{
+									"key": "size",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-004",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/branches/23/insurances/incidents?projectIds=12&page=50&size=25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"branches",
+								"23",
+								"insurances",
+								"incidents"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "12"
+								},
+								{
+									"key": "page",
+									"value": "50"
+								},
+								{
+									"key": "size",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-005",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/branches/100/loan-accounts/loan-infos?page=0&size=100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"branches",
+								"100",
+								"loan-accounts",
+								"loan-infos"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-006",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/branches/13/push-notifications?page=0&size=100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"branches",
+								"13",
+								"push-notifications"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-009",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/transactions/program-organizers?branchId=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"transactions",
+								"program-organizers"
+							],
+							"query": [
+								{
+									"key": "branchId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-010",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/transactions/village-organizers?branchId=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"transactions",
+								"village-organizers"
+							],
+							"query": [
+								{
+									"key": "branchId",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-011",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/bank-branches?page=0&size=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"bank-branches"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-012",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/branches/100/asset-distribution?page=0&size=25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"branches",
+								"100",
+								"asset-distribution"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-013",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/branches/32/mapped-loan-limits?page=50&size=50",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"branches",
+								"32",
+								"mapped-loan-limits"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "50"
+								},
+								{
+									"key": "size",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-014",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/branches/323/mapped-products?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"branches",
+								"323",
+								"mapped-products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-016",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/branches/mapped-products-and-feature-types?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"branches",
+								"mapped-products-and-feature-types"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-017",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/education-level?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"education-level"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-018",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/emergency-loan-polices?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"emergency-loan-polices"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-019",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/employees/self-details",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"employees",
+								"self-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-023",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/frequencies/interest-credits?page=0&size=0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"frequencies",
+								"interest-credits"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-024",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/frequencies/interest-provisions?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"frequencies",
+								"interest-provisions"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-025",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/frequencies/loans-collections?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"frequencies",
+								"loans-collections"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-029",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-product-details?page=40&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-product-details"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "40"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-30",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-031",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/mapped-branches/32?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"mapped-branches",
+								"32"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-032",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/mapped-cohorts?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"mapped-cohorts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-033",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/mapped-member-categories?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"mapped-member-categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-034",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/mapped-occupations?page=2&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"mapped-occupations"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-035",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/mapped-projects?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"mapped-projects"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-036",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/mapped-savings-products?page=2&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"mapped-savings-products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-037",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/policies?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"policies"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-038",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/types?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"types"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-039",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/variable-installments?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"variable-installments"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-043",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/locations/districts?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"locations",
+								"districts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-044",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/locations/divisions?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"locations",
+								"divisions"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-045",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/locations/sectors?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"locations",
+								"sectors"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-046",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/locations/sub-sectors?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"locations",
+								"sub-sectors"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-047",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/locations/upazilas?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"locations",
+								"upazilas"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-048",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/member-types?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"member-types"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-049",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/micro-finance-organizations?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"micro-finance-organizations"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-052",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/projects/mapped-branches/88?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"projects",
+								"mapped-branches",
+								"88"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-053",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/projects/mapped-installment-amounts?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"projects",
+								"mapped-installment-amounts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-054",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/projects/mapped-loan-expose-limits?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"projects",
+								"mapped-loan-expose-limits"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-055",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/projects/mapped-member-categories?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"projects",
+								"mapped-member-categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-056",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/remote-queries?page=50&size=100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"remote-queries"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "50"
+								},
+								{
+									"key": "size",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-059",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/savings/maturity-periods?page=5&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"savings",
+								"maturity-periods"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "5"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-60",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/savings/penalties?page=20&size=25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"savings",
+								"penalties"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "20"
+								},
+								{
+									"key": "size",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-061",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/savings/product-deposit-rules?page=20&size=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"savings",
+								"product-deposit-rules"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "20"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-062",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/savings/product-policies?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"savings",
+								"product-policies"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-063",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/savings/products?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"savings",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-064",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/schemes?page=0&size=30",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"schemes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-065",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/schemes/mapped-assets?page=0&size=30",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"schemes",
+								"mapped-assets"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-066",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/schemes/mapped-loan-products?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"schemes",
+								"mapped-loan-products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-067",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/seasonal-ceilings?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"seasonal-ceilings"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vo-categories",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/vo-categories?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"vo-categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-068",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/surveys?page=0&size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"surveys"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-070",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/surveys/77",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"surveys",
+								"77"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-001",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "X-AUTHORIZATION",
+								"value": "{{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/common/v1/branch-manager-infos?branchId=342&projectId=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"common",
+								"v1",
+								"branch-manager-infos"
+							],
+							"query": [
+								{
+									"key": "branchId",
+									"value": "342"
+								},
+								{
+									"key": "projectId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-015",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/branches/{{branchId}}/role-wise-approval-limits?projectIds=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"branches",
+								"{{branchId}}",
+								"role-wise-approval-limits"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-021",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/external-links?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"external-links"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-022",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/external-links/100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"external-links",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-026",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/grant-mappings?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"grant-mappings"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-027",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/insurance-products?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"insurance-products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-028",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/insurance-products-details?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"insurance-products-details"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-040",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-products/variable-installments?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-products",
+								"variable-installments"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-041",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loan-projects/policies?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loan-projects",
+								"policies"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-042",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/loans/interest-rates?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"loans",
+								"interest-rates"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-069",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/config/v1/surveys/100",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"config",
+								"v1",
+								"surveys",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-072",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/report/v1/branches/{{branchId}}/loan-accounts/100/loan-collection-histories?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"report",
+								"v1",
+								"branches",
+								"{{branchId}}",
+								"loan-accounts",
+								"100",
+								"loan-collection-histories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "C-073",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-AUTHORIZATION",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/report/v1/branches/{{branchId}}/transitioning-borrowers?projectIds={{bmProjectIds}}&fromDate=2024-01-01&toDate=2024-01-15&fromStatus=1&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"report",
+								"v1",
+								"branches",
+								"{{branchId}}",
+								"transitioning-borrowers"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "fromDate",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "toDate",
+									"value": "2024-01-15"
+								},
+								{
+									"key": "fromStatus",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PO",
+			"item": [
+				{
+					"name": "PO-046-village-organisations-visits",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{branchId}}/employees/401447686/village-organisations/visits?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{branchId}}",
+								"employees",
+								"401447686",
+								"village-organisations",
+								"visits"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-048-village-organizations",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/10/employees/20/village-organizations?projectIds=30&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"10",
+								"employees",
+								"20",
+								"village-organizations"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "30"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-044-term-savings-account",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/10/employees/20/term-savings/account?projectIds=30&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"10",
+								"employees",
+								"20",
+								"term-savings",
+								"account"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "30"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-045-term-savings-transactions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/10/employees/10/term-savings/transactions?projectIds=10&page=0&size=0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"10",
+								"employees",
+								"10",
+								"term-savings",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-037-savings-accounts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{branchId}}/employees/20/savings-accounts?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{branchId}}",
+								"employees",
+								"20",
+								"savings-accounts"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-038-savings-accounts-transactions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/savings-accounts/transactions?projectIds={{bmProjectIds}}&dateFrom=2024-01-02&dateTo=2024-01-15&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"savings-accounts",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-02"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-15"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-035-reports-good-loans",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://10.140.0.41:9003/smart-mf/po/v1/branches/10/employees/10/reports/good-loans?projectIds=10&page=0&size=0",
+							"protocol": "http",
+							"host": [
+								"10",
+								"140",
+								"0",
+								"41"
+							],
+							"port": "9003",
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"10",
+								"employees",
+								"10",
+								"reports",
+								"good-loans"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-036-reports-transitioning-borrowers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/10/employees/10/reports/transitioning-borrowers?projectIds=10&fromDate=2024-01-03&toDate=2024-03-01&fromStatus=2&page=0&size=0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"10",
+								"employees",
+								"10",
+								"reports",
+								"transitioning-borrowers"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "10"
+								},
+								{
+									"key": "fromDate",
+									"value": "2024-01-03"
+								},
+								{
+									"key": "toDate",
+									"value": "2024-03-01"
+								},
+								{
+									"key": "fromStatus",
+									"value": "2"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-018-members",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{orgToken}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-Authorization",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-021-members-attentions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/attentions?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"attentions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-023-members-blacklists",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/blacklists?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"blacklists"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-024-members-finger-print-templates",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/finger-print-templates?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"finger-print-templates"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-025-members-insurers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/insurers?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"insurers"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-026-members-nominees",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/nominees?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"nominees"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-027-members-passbooks",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/passbooks?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"passbooks"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-028-members-personal-infos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/personal-infos?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"personal-infos"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-030-members-qr-mappers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/members/qr-mappers?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"members",
+								"qr-mappers"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-017-loan-provisions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/loan-provisions?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"loan-provisions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-016-loan-proposals",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/loan-proposals?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"loan-proposals"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-050-loan-products-duration-restrictions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/loan-products/duration-restrictions?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"loan-products",
+								"duration-restrictions"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-015-loan-collections",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/loan-collections?projectIds={{bmProjectIds}}&dateFrom=2024-01-02&dateTo=2024-01-18&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"loan-collections"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "dateFrom",
+									"value": "2024-01-02"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-01-18"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-011-loan-accounts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/loan-accounts?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"loan-accounts"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-012-loan-accounts-term-savings-mappings",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/loan-accounts/term-savings-mappings?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"loan-accounts",
+								"term-savings-mappings"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-014-loan-accounts-transfer-histories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/01/loan-accounts/transfer-histories?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"01",
+								"loan-accounts",
+								"transfer-histories"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-010-good-customer-loans",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/good-customer-loans?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"good-customer-loans"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-008-emergency-loans/eligible-members",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/emergency-loans/eligible-members?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"emergency-loans",
+								"eligible-members"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-043-targets",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/targets?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"targets"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-005-buffer-members",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/buffer-members?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"buffer-members"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-003-buffer-loan-proposals",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/buffer-loan-proposals?projectIds={{bmProjectIds}}&page={{pageNumber}}&size=1{{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"buffer-loan-proposals"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "1{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-001-buffer-collections",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/10/buffer-collections?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"buffer-collections"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-039-withdrawal-proposals",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}smart-mf/po/v1/branches/{{poBranchId}}/employees/10/savings/withdrawal-proposals?projectIds={{bmProjectIds}}&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}smart-mf"
+							],
+							"path": [
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"10",
+								"savings",
+								"withdrawal-proposals"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "{{bmProjectIds}}"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-042-tagged-vo-locations",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "x-po-device-id",
+								"value": "{{poDeviceIdToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/20/tagged-vo-locations?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"20",
+								"tagged-vo-locations"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-013-loan-accounts-transaction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/100/loan-accounts/transactions?projectIds=1&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"100",
+								"loan-accounts",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-029-qr-codes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/100/members/qr-codes?projectIds=1&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"100",
+								"members",
+								"qr-codes"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-049-next-collection-dates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/branches/{{poBranchId}}/employees/100/village-organizations/next-collection-dates?projectIds=1&page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"branches",
+								"{{poBranchId}}",
+								"employees",
+								"100",
+								"village-organizations",
+								"next-collection-dates"
+							],
+							"query": [
+								{
+									"key": "projectIds",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO-054-static-survey-response",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/smart-mf/po/v1/static-survey-responses?page={{pageNumber}}&size={{pageSize}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"smart-mf",
+								"po",
+								"v1",
+								"static-survey-responses"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{pageNumber}}"
+								},
+								{
+									"key": "size",
+									"value": "{{pageSize}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "orgToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "bmToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "bmProjectIds",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "pageNumber",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "pageSize",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "bmBranchId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "poDeviceIdToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "poBranchId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "branchId",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
